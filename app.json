@@ -30,7 +30,7 @@
       "supportsTablet": true,
       "bundleIdentifier": "com.courtconnect.app",
       "config": {
-        "googleMapsApiKey": "AIzaSyD0FONlMqG4BGjGB6yQhWLlih4NQoywsdo"
+        "googleMapsApiKey": "ENTER_API_KEY"
       },
       "infoPlist": {
         "NSLocationWhenInUseUsageDescription": "CourtConnect needs your location to find basketball courts near you.",
