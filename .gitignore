@@ -1,38 +1,45 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+# Environment variables
+.env
+.env.local
+.env.*
+!.env.example
 
-# dependencies
+# Configuration files
+config/FirebaseConfig.js
+!config/FirebaseConfig.example.js
+
+# Dependencies
 node_modules/
-
-# Expo
 .expo/
 dist/
-web-build/
-expo-env.d.ts
-
-# Native
-*.orig.*
+npm-debug.*
 *.jks
 *.p8
 *.p12
 *.key
 *.mobileprovision
-
-# Metro
-.metro-health-check*
-
-# debug
-npm-debug.*
-yarn-debug.*
-yarn-error.*
+*.orig.*
+web-build/
 
 # macOS
 .DS_Store
 *.pem
 
-# local env files
-.env*.local
+# Local development
+*.log
+.expo-shared/
 
-# typescript
-*.tsbuildinfo
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
 
-app-example
+# Testing
+coverage/
+
+# Production
+build/
+*.apk
+*.aab
+*.ipa

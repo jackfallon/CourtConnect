@@ -1,50 +1,81 @@
-# Welcome to your Expo app 👋
+# CourtConnect 🏀
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+CourtConnect is a mobile application that helps basketball enthusiasts find and reserve court time at nearby public basketball courts. Users can view available courts on a map, sign up for specific time slots, and see who else is planning to play.
 
-## Get started
+## Features
 
-1. Install dependencies
+- 📍 Map view of nearby basketball courts
+- 📅 Calendar-based court reservation system
+- 👥 Real-time player signup tracking
+- 🔍 Court search functionality
+- 📱 Mobile-friendly interface
 
-   ```bash
-   npm install
-   ```
+## Tech Stack
 
-2. Start the app
+- React Native / Expo
+- Firebase (Authentication & Firestore)
+- Google Maps API
+- React Native Calendars
 
-   ```bash
-    npx expo start
-   ```
+## Demo
 
-In the output, you'll find options to open the app in a
+## Setup Instructions
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+1. Clone the repository:
 ```bash
-npm run reset-project
+git clone https://github.com/yourusername/CourtConnect.git
+cd CourtConnect
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Install dependencies:
+```bash
+npm install
+```
 
-## Learn more
+3. Set up environment variables and configuration:
+   - Copy `.env.example` to `.env`:
+     ```bash
+     cp .env.example .env
+     ```
+   - Copy Firebase configuration template:
+     ```bash
+     cp config/FirebaseConfig.example.js config/FirebaseConfig.js
+     ```
+   - Fill in your API keys and configuration values in both `.env` and `config/FirebaseConfig.js`
 
-To learn more about developing your project with Expo, look at the following resources:
+4. Required API Keys/Services:
+   - Google Maps API key (for court location services)
+   - Firebase project configuration
+     - Create a new project at [Firebase Console](https://console.firebase.google.com)
+     - Enable Authentication and Firestore
+     - Add your app to get the configuration values
+     - Add these values to both `.env` and ensure `FirebaseConfig.js` is properly configured
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+5. Start the development server:
+```bash
+npx expo start
+```
 
-## Join the community
+## Environment Variables
 
-Join our community of developers creating universal apps.
+The following environment variables are required in your `.env` file:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```
+EXPO_PUBLIC_GOOGLE_MAPS_API_KEY=
+EXPO_PUBLIC_FIREBASE_API_KEY=
+EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN=
+EXPO_PUBLIC_FIREBASE_PROJECT_ID=
+EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET=
+EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=
+EXPO_PUBLIC_FIREBASE_APP_ID=
+```
+
+## Security Note
+
+The repository includes example configuration files:
+- `.env.example`: Template for environment variables
+- `config/FirebaseConfig.example.js`: Template for Firebase configuration
+
+The actual configuration files (`.env` and `config/FirebaseConfig.js`) are not included in the repository for security reasons. You must create these files locally with your own API keys and Firebase configuration values.
+
+
