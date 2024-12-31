@@ -18,6 +18,12 @@ CourtConnect is a mobile application that helps basketball enthusiasts find and 
 - React Native Calendars
 
 ## Demo
+<p align="center">Main Map Screen</p>
+![court_connect_map](https://github.com/user-attachments/assets/85d65aa1-a422-4af3-b855-4881304dce42)
+<p align="center">Searching for Courts</p>
+![court_connect_map_search](https://github.com/user-attachments/assets/520eb451-e0c2-4901-bb5c-798caa77f876)
+<p align="center">Signing up for a Court</p>
+![court_connect_court_sign_up](https://github.com/user-attachments/assets/4c6746f4-618f-4018-abe1-15b2453f8954)
 
 ## Setup Instructions
 
